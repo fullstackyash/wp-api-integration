@@ -1,0 +1,15 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+.wp-block-create-block-miusage-block {
+	.miusage-table {
+		.row {
+			.fieldset {
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 1px;
+				padding-bottom: 1px;
+			}
+		}
+	}
+}

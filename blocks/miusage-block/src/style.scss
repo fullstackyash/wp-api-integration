@@ -1,0 +1,82 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+.wp-block-create-block-miusage-block {
+	padding: 2px;
+	align-items: center;
+	display: grid;
+	.miusage-table {
+		width: 780px;
+		max-width: 800px;
+		text-align: left;
+		border: 1px solid lightgray;
+		color: #000000;
+		overflow: auto;
+		white-space: nowrap;
+		@media screen and (max-width: 390px) {
+			width: 320px;
+		}
+		@media screen and (min-width: 391px) and (max-width: 430px) {
+			width: 350px;
+		}
+		@media screen and (min-width: 431px) and (max-width: 540px) {
+			width: 450px;
+		}
+		@media screen and (min-width: 541px) and (max-width: 768px) {
+			width: 600px;
+		}
+		@media screen and (min-width: 769px) and (max-width: 853px) {
+			width: 650px;
+		}
+		.row {
+			border-bottom: 1px solid lightgrey;
+			width: 780px;
+			@media screen and (max-width: 540px) {
+				width: 520px;
+			}
+			.fieldset {
+				display: inline-block;
+				padding: 15px;
+				width: 120px;
+				max-width: 150px;
+				word-wrap: break-word;
+				word-break: break-all;
+				text-align-last: left;
+				@media screen and (max-width: 540px) {
+					padding: 10px;
+					width: 80px;
+					font-size: 12px;
+				}
+			}
+		}
+		.table-details {
+			font-size: 15px;
+			.row:nth-child(even) {
+				background: lightgrey;
+			}
+			.row:nth-child(odd) {
+				background: whitesmoke;
+			}
+		}
+		.table-headers {
+			&.row {
+				font-weight: 600;
+				background: teal;
+				color: white;
+			}
+		}
+	}
+}
+@media screen and (max-width: 853px) {
+	::-webkit-scrollbar {
+			-webkit-appearance: none;
+			width: 2px;
+			height: 8px;
+	}
+	::-webkit-scrollbar-thumb {
+			border-radius: 2px;
+			background-color: rgba(0, 0, 0, .5);
+			box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+	}
+}

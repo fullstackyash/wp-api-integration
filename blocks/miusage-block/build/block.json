@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/miusage-block",
+  "version": "0.1.0",
+  "title": "Miusage Block",
+  "category": "widgets",
+  "icon": "dashicons dashicons-editor-table",
+  "description": "Fetches data from Miusage API and displays in the block.",
+  "example": {},
+  "attributes": {
+    "showId": {
+      "type": "boolean",
+      "default": true
+    },
+    "showFirstName": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLastName": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEmail": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "myusage-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
