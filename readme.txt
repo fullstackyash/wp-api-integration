@@ -1,7 +1,7 @@
 === Wp Api Integration ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: Yash Chopra
 Donate link: https://example.com/
-Tags: comments, spam
+Tags: API, block
 Requires at least: 4.5
 Tested up to: 6.4.3
 Requires PHP: 5.6
